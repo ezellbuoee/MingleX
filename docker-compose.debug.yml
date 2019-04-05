@@ -1,0 +1,33 @@
+version: '3'
+services:
+  mysql:
+    container_name: minglex-mysql
+    image: mysql/mysql-server:5.7
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    restart: always
+  app:
+    container_name: minglex-app
+    build: .
+    environment:
+      # Database
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      # Secure mode
+      SEC_STORE_PASSWORD_SOLUTION: ${SEC_STORE_PASSWORD_SOLUTION}  #(Plain/Hash/SaltHash/Bcrypt, default: Plain)
+      SEC_SQL_INJECTION: ${SEC_SQL_INJECTION}                      #(True/False, default: False), note: must be a string!
+      SEC_STORED_XSS: ${SEC_STORED_XSS}                            #(None/HTMLEscapeOnly/Protected, default: None)
+      SEC_SESSION_FIXATION: ${SEC_SESSION_FIXATION}                #(True/False, default: False)
+      SEC_REFLECTED_XSS: ${SEC_REFLECTED_XSS}                      #(True/False, default: False)
+      SEC_CSRF: ${SEC_CSRF}                                        #(True/False, default: False)
+    volumes:
+      - ./wait-for-it.sh:/wait-for-it.sh
+    ports:
+      - 6969:8080
+    command: ["./wait-for-it.sh", "minglex-mysql:3306", "--", "java", "-jar", "-Dspring.profiles.active=docker", "/opt/app.war"]
+    depends_on:
+      - mysql
+    restart: always

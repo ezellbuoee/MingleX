@@ -1,0 +1,213 @@
+a {
+    font-size: 17px;
+}
+
+img.logo{
+	height: 70px;
+	width: auto;
+	position: relative;
+	z-index: 2105;
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+.sidebar {
+	height: 100%;
+	position: fixed!important;
+    width: auto;
+    max-width: 300px;
+	z-index: 1;
+	overflow: auto;
+	border-right: 1px solid lightgray;
+}
+
+footer {
+	z-index: 2;
+}
+
+.user-profile img {
+    width: 225px;
+    height: 225px;
+    border: 7px solid slategray;
+    margin-bottom: 25px;
+}
+
+.user-profile a {
+	color: slategray;
+}
+
+img.rounded-circle {
+	border-radius: 50%;
+}
+
+img.profile-img {
+	margin: 35px;
+}
+
+.user-profile {
+    text-align: center;
+}
+
+.user-profile #crushing-on-update input {
+    width: 100%;
+}
+
+.alice-blue {
+	background: aliceblue;
+}
+
+h4, h5 {
+	color: slategray;
+}
+
+.detail-info, .chatroom-sidebar {
+	text-align: left;
+}
+
+.info-item {
+	background-color: floralwhite;
+	padding: 0 30px;
+	border-top: 1px solid bisque;
+	border-bottom: 1px solid bisque;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.info-item h6 {
+	color: slategray;
+}
+
+.info-item p {
+	font-size: 17px;
+	color: sienna;
+}
+
+.status-user-img {
+	text-align: center;
+	min-width: 110px;
+	max-width: 200px;
+}
+
+.status-user-img img {
+	width: 100px;
+	height: 100px;
+	border: 2px solid bisque;
+}
+
+.story {
+	width: 777px;
+	margin-top: 20px;
+}
+
+.navbar-right .nav-username {
+	color: lightsteelblue;
+}
+
+.navbar-right a:hover .nav-username, .navbar-right a:focus .nav-username {
+	color: pink;
+}
+
+.edit-info {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#gender-update input, #lookingfor-update input {
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.chat-item {
+	color: darkslategray;
+	width: 100%;
+	display: block;
+	padding: 0 16px;
+	text-align: left;
+	border-bottom: 1px solid lightgray;
+	background-color: floralwhite;
+	line-height: 50px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.chat-item:hover, .chat-item:focus, .active {
+	background-color: #f1f0f0;
+	text-decoration: none;
+}
+
+.with-sidebar {
+	margin-left: 295px;
+	padding: 15px 50px;
+}
+
+.chat {
+	width: 888px;
+	margin-top: 20px;
+	position: relative;
+	height: calc(100% - 79px);
+}
+
+#chatroom {
+	width: 100%;
+	height: calc(100% - 129px);
+	overflow: auto;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.message {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-right: 20px;
+}
+
+.message span {
+	background-color: #f1f0f0;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.message.right span {
+	background-color: #90b1dc;
+	color: white;
+}
+
+.chatbox {
+	position: absolute;
+	bottom: 0px;
+	width: 788px;
+	padding: 30px 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.chatmate-username {
+	font-weight: bold;
+	color: #90b1dc;
+}
+
+.btn-file-custom input {
+	display:none;
+}
+
+.detail-xml {
+	padding: 15px 30px;
+}
+
+.detail-xml a {
+	color: black;
+}

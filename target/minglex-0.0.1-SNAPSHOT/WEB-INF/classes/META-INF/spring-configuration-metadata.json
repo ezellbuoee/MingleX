@@ -1,0 +1,53 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.ksv.minglex.setting.SecuritySetting",
+      "name": "security",
+      "type": "com.ksv.minglex.setting.SecuritySetting"
+    },
+    {
+      "sourceType": "com.ksv.minglex.storage.StorageProperties",
+      "name": "storage",
+      "type": "com.ksv.minglex.storage.StorageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.ksv.minglex.setting.SecuritySetting",
+      "name": "security.csrf",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.ksv.minglex.setting.SecuritySetting",
+      "name": "security.reflected-x-s-s",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.ksv.minglex.setting.SecuritySetting",
+      "name": "security.session-fixation",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.ksv.minglex.setting.SecuritySetting",
+      "name": "security.sql-injection",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.ksv.minglex.setting.SecuritySetting",
+      "name": "security.store-password-solution",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ksv.minglex.setting.SecuritySetting",
+      "name": "security.stored-x-s-s",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ksv.minglex.storage.StorageProperties",
+      "name": "storage.location",
+      "description": "Folder location for storing files",
+      "type": "java.lang.String"
+    }
+  ]
+}
